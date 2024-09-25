@@ -44,7 +44,7 @@ donetNowButton.addEventListener('click', function(event) {
     historyConteiner.insertBefore(historyItems, historyConteiner.lastChild);
 
     // Modal Added 
-
+    // document.getElementById('modal').classList.remove('hidden')
     document.getElementById('my_modal_1').showModal();
     
 });
