@@ -1,7 +1,6 @@
 const homePage = document.getElementById('home');
 homePage.addEventListener('click', function(event) {
     event.preventDefault();
-    console.log("home clicked");
     window.location.href = "./home.html";
 });
 
@@ -9,13 +8,13 @@ const donetNowButton = document.getElementById("donateNowButton");
 
 donetNowButton.addEventListener('click', function(event) {
     event.preventDefault();
-    const firstDonetInput = parseFloat(document.getElementById('firstdonetinput').value);
+    // const firstDonetInput = parseFloat(document.getElementById('firstdonetinput').value);
+    const firstDonetInput = getBlanceValue('firstdonetinput')
 
     if (firstDonetInput <= 0 || isNaN(firstDonetInput)) {
         alert("Your number is invalid");
         return;
     }
-
     const YourCurrentBlance = parseFloat(document.getElementById('YourCurrentBlance').innerText);
     const mainBlance = parseFloat(document.getElementById('main-blance').innerText);
 
@@ -56,9 +55,8 @@ const donetNowButtontwo = document.getElementById("donateNowButtontwo");
 
 donetNowButtontwo.addEventListener('click', function(event) {
     event.preventDefault();
-    const firstDonetInputtwo = parseFloat(document.getElementById('firstdonetinputtwo').value);
-    console.log(firstDonetInputtwo);
-    
+    // const firstDonetInputtwo = parseFloat(document.getElementById('firstdonetinputtwo').value);
+    const firstDonetInputtwo = getBlanceValue('firstdonetinputtwo')
     if (firstDonetInputtwo <= 0 || isNaN(firstDonetInputtwo)) {
         alert("Your number is invalid");
         return;
@@ -106,7 +104,10 @@ const donetNowButtonthird = document.getElementById("donateNowButtontwothird");
 
 donetNowButtonthird.addEventListener('click', function(event) {
     event.preventDefault();
-    const firstDonetInputthird = parseFloat(document.getElementById('firstdonetinputthird').value);
+    // const firstDonetInputthird = parseFloat(document.getElementById('firstdonetinputthird').value);
+    const firstDonetInputthird = getBlanceValue('firstdonetinputthird')
+    console.log(firstDonetInputthird);
+    
     console.log("btn clickde");
     
     if (firstDonetInputthird <= 0 || isNaN(firstDonetInputthird)) {
