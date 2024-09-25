@@ -8,15 +8,15 @@ const donetNowButton = document.getElementById("donateNowButton");
 
 donetNowButton.addEventListener('click', function(event) {
     event.preventDefault();
-    // const firstDonetInput = parseFloat(document.getElementById('firstdonetinput').value);
+    // const firstDonetInput = Number(document.getElementById('firstdonetinput').value);
     const firstDonetInput = getBlanceValue('firstdonetinput')
 
     if (firstDonetInput <= 0 || isNaN(firstDonetInput)) {
         alert("Your number is invalid");
         return;
     }
-    const YourCurrentBlance = parseFloat(document.getElementById('YourCurrentBlance').innerText); 
-    const mainBlance = parseFloat(document.getElementById('main-blance').innerText);
+    const YourCurrentBlance = Number(document.getElementById('YourCurrentBlance').innerText); 
+    const mainBlance = Number(document.getElementById('main-blance').innerText);
     
 
 
@@ -57,15 +57,15 @@ const donetNowButtontwo = document.getElementById("donateNowButtontwo");
 
 donetNowButtontwo.addEventListener('click', function(event) {
     event.preventDefault();
-    // const firstDonetInputtwo = parseFloat(document.getElementById('firstdonetinputtwo').value);
+    // const firstDonetInputtwo = Number(document.getElementById('firstdonetinputtwo').value);
     const firstDonetInputtwo = getBlanceValue('firstdonetinputtwo')
     if (firstDonetInputtwo <= 0 || isNaN(firstDonetInputtwo)) {
         alert("Your number is invalid");
         return;
     }
 
-    const YourCurrentBlancetwo = parseFloat(document.getElementById('YourCurrentBlancetwo').innerText);
-    const mainBlancetwo = parseFloat(document.getElementById('main-blance').innerText);
+    const YourCurrentBlancetwo = Number(document.getElementById('YourCurrentBlancetwo').innerText);
+    const mainBlancetwo = Number(document.getElementById('main-blance').innerText);
     console.log(YourCurrentBlancetwo, mainBlancetwo);
     
 
@@ -106,7 +106,7 @@ const donetNowButtonthird = document.getElementById("donateNowButtontwothird");
 
 donetNowButtonthird.addEventListener('click', function(event) {
     event.preventDefault();
-    // const firstDonetInputthird = parseFloat(document.getElementById('firstdonetinputthird').value);
+    // const firstDonetInputthird = Number(document.getElementById('firstdonetinputthird').value);
     const firstDonetInputthird = getBlanceValue('firstdonetinputthird')
     console.log(firstDonetInputthird);
     
@@ -117,8 +117,8 @@ donetNowButtonthird.addEventListener('click', function(event) {
         return;
     }
 
-    const YourCurrentBlancethird = parseFloat(document.getElementById('YourCurrentBlancethird').innerText);
-    const mainBlancethird = parseFloat(document.getElementById('main-blance').innerText);
+    const YourCurrentBlancethird = Number(document.getElementById('YourCurrentBlancethird').innerText);
+    const mainBlancethird = Number(document.getElementById('main-blance').innerText);
     console.log(YourCurrentBlancethird, mainBlancethird);
     
 

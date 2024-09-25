@@ -1,3 +1,3 @@
 function getBlanceValue(id) {
-    return parseFloat(document.getElementById(id).value);
+    return Number(document.getElementById(id).value);
 }
