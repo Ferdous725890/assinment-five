@@ -15,8 +15,10 @@ donetNowButton.addEventListener('click', function(event) {
         alert("Your number is invalid");
         return;
     }
-    const YourCurrentBlance = parseFloat(document.getElementById('YourCurrentBlance').innerText);
+    const YourCurrentBlance = parseFloat(document.getElementById('YourCurrentBlance').innerText); 
     const mainBlance = parseFloat(document.getElementById('main-blance').innerText);
+    
+
 
     // Check if the donation exceeds the main balance
     if (mainBlance < firstDonetInput) {
